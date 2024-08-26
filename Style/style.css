@@ -1,0 +1,185 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    width: 95%;
+    max-width: 1000px;
+    flex-direction: column;
+    background-color: #e0e0e0;
+    margin: 0 auto;
+    font-family: Arial, sans-serif;
+    padding: 0;
+}
+
+div.gh {
+    border: 3px solid #4682B4;
+    color: #ffffff;
+    background-image: linear-gradient(to right, #FFD700, #4682B4);
+    border-radius: 10px;
+    padding: 20px;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2rem;
+    color: #333333;
+    text-shadow: 1px 1px 2px #000000;
+}
+
+header p {
+    font-size: 1.2rem;
+    margin: 0;
+    color: #333333;
+    text-shadow: 1px 1px 2px #000000;
+}
+
+section.partft {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+    margin: 0 auto;
+}
+
+section article.partdtr {
+    margin: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    width: 50%;
+}
+
+section article.partdtr img {
+    margin: 10px 0;
+    width: auto;
+    height: 180px;
+}
+
+section article.partdtr h2 {
+    font-size: 2.5rem;
+    margin: 30% 10px 0 0;
+    color: #4682B4;
+    text-shadow: 1px 1px 2px #000000;
+}
+
+section article.partdtr p {
+    margin: 0 20px 20px 0;
+    font-size: 1.2rem;
+    color: #333333;
+    text-shadow: 1px 1px 2px #000000;
+}
+
+hr.um {
+    width: 0;
+    border: 1px solid #4682B4;
+}
+
+section article.ma {
+    width: 50%;
+}
+
+section article.ma div {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+section article.ma div p {
+    font-size: 1.2rem;
+    margin: 20px;
+    color: #333333;
+    text-shadow: 1px 1px 2px #000000;
+}
+
+section article.ma div p span {
+    margin-left: 5px;
+    font-size: 1rem;
+    color: #333333;
+    text-shadow: 1px 1px 2px #000000;
+}
+
+section.ts {
+    display: flex;
+    flex-wrap: nowrap; /* Não permitir quebra de linha inicialmente */
+    justify-content: space-between;
+    margin: 10px 0 20px 0;
+    width: 100%;
+}
+
+section.ts div {
+    flex: 1 1 100px; /* Flexível e mínima largura de 100px */
+    margin: 10px;
+    text-align: center;
+    background-color: #87CEFA;
+    border-radius: 5px;
+    padding: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+section.ts div img {
+    width: 50px;
+    height: auto;
+    margin: 0;
+}
+
+section.ts div p {
+    margin: 5px 0 5px 0;
+    color: #333333;
+    text-shadow: 1px 1px 2px #000000;
+}
+
+section.ts div p.tg {
+    margin: 10px 0 5px 0;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 10px 0;
+    background-color: #F0F8FF;
+}
+
+table td, table th {
+    border: 1px solid #4682B4;
+    text-align: center;
+    padding: 10px;
+    color: #FFFFFF;
+    background-color: #4682B4;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+table td:nth-child(3),
+table td:nth-child(4) {
+    font-size: 1.4rem;
+    color: #f3db50;
+}
+
+table th {
+    background-color: #4682B4;
+    color: #FFFFFF;
+    padding: 10px;
+    font-size: 1.4rem;
+    font-weight: bold;
+    text-shadow: 1px 1px 2px #000000;
+}
+
+hr {
+    border: 1px solid #4682B4;
+    width: 100%;
+}
+
+/* Media queries para telas pequenas */
+@media (max-width: 768px) {
+    section.ts {
+        flex-wrap: wrap; /* Permitir quebra de linha em telas menores */
+        justify-content: center; /* Centralizar itens */
+    }
+
+    section.ts div {
+        flex: 1 1 45%; /* Ajustar largura em telas menores */
+        margin: 5px;
+    }
+}
